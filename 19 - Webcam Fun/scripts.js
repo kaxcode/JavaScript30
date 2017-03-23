@@ -13,7 +13,13 @@ function getVideo() {
     })
     .catch(err => {
       console.error(`OH NOOO`, err);
-    })
+    });
+}
+
+function paintToCanvas() {
+  const width = video.videoWidth;
+  const height = video.videoHeight;
+  console.log(width, height);
 }
 
 getVideo();
