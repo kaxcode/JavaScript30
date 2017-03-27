@@ -44,8 +44,8 @@
       .join('');
   }
 
-  function setVocie() {
-    msg.voice = voices.find(vocie =>  voice.name === this.value);
+  function setVoice() {
+    msg.voice = voices.find(voice => voice.name === this.value);
   }
 
   speechSynthesis.addEventListener('voiceschanged', populateVoices);
