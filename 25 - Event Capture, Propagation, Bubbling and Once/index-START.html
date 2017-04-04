@@ -41,8 +41,9 @@
 <script>
 const divs = document.querySelectorAll('div');
 
-fucntion logText(e) {
+function logText(e) {
   console.log(this.classList.value);
+  e.stopPropagation(); // stops the bubbling!
 }
 
 divs.forEach(div => div.addEventListener('click', logText, {capture: false
