@@ -26,3 +26,7 @@ function displayTimeLeft(seconds) {
   document.title = display;
   timerDisplay.textContent = display;
 }
+
+function displayEndTime(timestamp) {
+  const end = new Date(timestamp);
+}
